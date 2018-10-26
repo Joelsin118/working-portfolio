@@ -1,0 +1,435 @@
+.media {
+  padding: 100px 50px 50px 50px;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+  margin: 90px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+.lead {
+  text-align: center;
+  margin-bottom: 13px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+
+.lead2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+
+.tag-line {
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  padding: 1.5rem 1rem;
+}
+
+/* HOME PAGE HEADER STARTS */
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+
+/* HOME PAGE HEADER ENDS */
+/*GALLERY STARTS*/
+body {
+  min-height: 100vh;
+  font: normal 16px sans-serif;
+  padding: 40px 0;
+}
+
+.container.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 10px;
+  padding: 30px 50px;
+}
+
+.tz-gallery {
+  padding: 10px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row>div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e003';
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(46, 132, 206, 0.7);
+  content: '';
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+  opacity: 1;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+
+/*GALLERY ENDS*/
+.line {
+  position: relative;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* WORK IMAGE AND TEXT STARTS */
+.text-picture {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  &.text-picture--gray-bg {
+    background-color: #EEE;
+  }
+
+  .text-picture__text {
+    h2 {
+      margin-top: 50;
+    }
+
+    @media (min-width: $grid-float-breakpoint) {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .text-picture__picture {
+    text-align: center;
+
+    img {
+      margin-left: right;
+      margin-right: auto;
+    }
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  width: 100%;
+}
+
+// I only want Flexbox to kick in for larger devices.
+// i.e. I want to keep bootstraps mobile grid scaffolding intact.
+@media (min-width: $grid-float-breakpoint) {
+  .row--flex {
+    display: flex;
+
+    .row--flex__col {
+      align-self: flex-start;
+    }
+
+    .row--flex__col--center {
+      align-self: center;
+    }
+
+    .row--flex__col--bottom {
+      align-self: flex-end;
+    }
+  }
+}
+
+/* WORK IMAGE AND TEXT ENDS */
+/*ABOUT SECTION STARTS*/
+.site-heading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: 'Raleway';
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.site-heading .site-heading-lower {
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/*ABOUT SECTIONS ENDS*/
+/*Animation Starts*/
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*Animation ENDS*/
+/* CONTACT STARTS */
+@media (max-width: 575.98px) {
+  #contatti {
+    padding-bottom: 800px;
+  }
+
+  #contatti .maps iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 576px) {
+  #contatti {
+    padding-bottom: 800px;
+  }
+
+  #contatti .maps iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contatti {
+    padding-bottom: 350px;
+  }
+
+  #contatti .maps iframe {
+    width: 100%;
+    height: 850px;
+  }
+}
+
+@media (min-width: 992px) {
+  #contatti {
+    padding-bottom: 200px;
+  }
+
+  #contatti .maps iframe {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+/* CONTACT ENDS */
+/* FOOTER STARTS */
+.cyan.darken-3 {
+  background-color: #2d2d2d;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-left: 30%;
+  padding-bottom: 60%;
+}
+
+.py-3 {
+  color: #c1c1c1
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* FOOTERS ENDS */
